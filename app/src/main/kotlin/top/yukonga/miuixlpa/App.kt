@@ -50,6 +50,7 @@ import top.yukonga.miuix.kmp.theme.MiuixTheme.colorScheme
 import top.yukonga.miuix.kmp.utils.MiuixPopupUtils.Companion.dismissPopup
 import top.yukonga.miuix.kmp.utils.getWindowSize
 import top.yukonga.miuixlpa.ui.component.ESimCard
+import top.yukonga.miuixlpa.ui.component.MainCard
 import top.yukonga.miuixlpa.ui.theme.AppTheme
 
 @Composable
@@ -226,6 +227,7 @@ fun App() {
                 ) {
                     item {
                         Spacer(Modifier.height(12.dp))
+                        MainCard()
                         for (i in 0 until ii.intValue) {
                             ESimCard(
                                 cardName = "eSim Card ${1 + i}",

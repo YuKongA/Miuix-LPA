@@ -13,14 +13,14 @@ val pkgName = "top.yukonga.miuixlpa"
 @Suppress("UnstableApiUsage")
 android {
     namespace = pkgName
-    compileSdk = 35
+    compileSdk = 36
 
     defaultConfig {
         applicationId = pkgName
         minSdk = 26
-        targetSdk = 35
-        versionCode = 10003
-        versionName = "1.0.3"
+        targetSdk = 36
+        versionCode = 100
+        versionName = "1.0.0"
     }
     val properties = Properties()
     runCatching { properties.load(project.rootProject.file("local.properties").inputStream()) }
